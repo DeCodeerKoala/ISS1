@@ -1,0 +1,408 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 20vh auto auto;
+    background-color: beige;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    overflow-y: hidden;
+}
+
+#blokje {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+#welkedag {
+    grid-row: 1 / 2;
+    margin-top: -10px;
+}
+
+#welkedagprognose {
+    border-bottom: 2px solid black;
+    grid-row: 1 / 2;
+}
+
+
+#middenpagina {
+    background-color: rgb(253, 253, 120);
+    margin-top: -315px;
+    margin-bottom: 175px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 100px;
+    max-height: 60vh;
+    border: 2px solid black;
+}
+
+#middenpagina2 {
+    background-color: rgb(253, 253, 120);
+    margin-top: 6px;
+    margin-bottom: 330px;
+    max-height: 60vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#tekstmelding {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4rem;
+    margin-top: 6px;
+}
+
+#middenpaginaprognoses {
+    background-image: URL(img/sunglare.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    max-height: 60vh;
+    line-height: 48px;
+    font-size: 24px;
+    box-shadow: 5px 5px 70px #ffdd55;
+
+}
+
+#prognoses {
+    background-color: beige;
+    margin-top: -160px;
+}
+
+#prognoses1 {
+    border-top: 2px solid black;
+    background-color: beige;
+}
+
+#thermometer {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 8px;
+}
+
+#dag1prognose {
+    margin: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding-left: 16px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    box-shadow: 2.5px 2.5px #9b9b9b;
+}
+
+#dag2prognose {
+    margin: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding-left: 16px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    box-shadow: 2.5px 2.5px #9b9b9b;
+}
+
+#dag3prognose {
+    margin: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding-left: 16px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    box-shadow: 2.5px 2.5px #9b9b9b;
+}
+
+#dag4prognose {
+    margin: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding-left: 16px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    box-shadow: 2.5px 2.5px #9b9b9b;
+}
+
+#dag5prognose {
+    margin: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding-left: 16px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    box-shadow: 2.5px 2.5px #9b9b9b;
+}
+
+#dag6prognose {
+    margin: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding-left: 16px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    box-shadow: 2.5px 2.5px #9b9b9b;
+}
+
+#dag7prognose {
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding-left: 16px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    box-shadow: 2.5px 2.5px #9b9b9b;
+}
+
+
+#buttonbelow {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 24px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 45px;
+    border: 2px solid black;
+    box-shadow: 6px 6px #686868;
+}
+
+#buttonbelow:hover {
+    background-color: black;
+    color: white;
+}
+
+#titelvandag {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2.5rem;
+
+    margin: 30px;
+    margin-top: 37.5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    border-radius: 7.5px;
+    background-color: white;
+    box-shadow: 5px 5px 70px 10px #ffdd55;
+}
+
+#titelvandag1 {
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    margin: 30px;
+    margin-top: -27.5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    border-radius: 7.5px;
+    background-color: white;
+}
+
+
+#titelvandagprognose1 {
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    margin: 50px;
+    margin-top: -27.5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    border-radius: 7.5px;
+    background-color: white;
+}
+
+#titelvandagprognose {
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2.5rem;
+
+    margin: 30px;
+    margin-top: 37.5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    border-radius: 7.5px;
+    background-color: white;
+    box-shadow: 5px 5px 70px 10px #ffdd55;
+}
+
+
+#zon7uur {
+    margin-top: -70px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: non;
+}
+
+#welkuuropkomendezon {
+    color: black;
+    font-size: 26px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+}
+
+#welkeUVopkomendezon {
+    color: rgb(188, 0, 0);
+    margin-top: 14px;
+    margin-bottom: 7px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#melding2 {
+    background-color: rgb(253, 253, 120);
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+    margin-top: -2px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#UVmaxmelding {
+    color: rgb(188, 0, 0);
+    font-weight: bold;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    display: none;
+}
+
+.modal-content {
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    border-radius: 25px;
+    border: 2.5px solid white;
+    max-width: 80vw;
+    font-size: 24px;
+    background-image: URL(img/3494.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 70px 10px red;
+}
+
+.textmodal {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text1 {
+    padding-right: 7px;
+    margin-top: 30px;
+    color: black;
+    background-color: beige;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 25px;
+}
+
+#LETOP {
+    color: white;
+    background-color: red;
+    margin-bottom: 0px;
+    margin-top: -52px;
+    font-size: 2rem;
+    box-shadow: 0px 0px 25px 7.5px red;
+}
+
+#zonimage {
+    margin-top: 37.5px;
+    margin-bottom: -20px;
+    max-width: 75vw;
+}
+
+#X {
+    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-left: 200px;
+    font-size: 32px;
+    background: beige;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 3px 3px #212121;
+}
